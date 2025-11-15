@@ -611,7 +611,6 @@ Teacher Id,Teacher Ethinicity,Teacher Age,Teacher Tenure,Student Ratio,Education
 0610,Chinese,24,5,24,PG,3,2,1,Single,Male,Secondary,STEM,Yes
 0611,Chinese,33,5,27,NG,1,2,2,Single,Male,Primary,English,No
 0612,Malay,25,11,42,NG,4,1,2,Divorced,Female,Pre-K,Language,No
-0613,Malay,48,14,49,PG,4,4,0,Married,Binary,Pre-K,Language,No
 0614,European,42,6,40,UG,5,1,5,Divorced,Female,Pre-K,STEM,No
 0615,Malay,54,11,48,NG,4,4,7,Divorced,Binary,Primary,Language,No
 0616,Indian,31,7,45,NG,5,1,8,Single,Male,Primary,Language,No
@@ -998,4 +997,5 @@ Teacher Id,Teacher Ethinicity,Teacher Age,Teacher Tenure,Student Ratio,Education
 0997,Chinese,60,13,14,UG,4,4,1,Single,Male,Secondary,STEM,No
 0998,Indian,22,2,46,UG,4,3,7,Married,Female,Primary,Language,No
 0999,,32,8,24,UG,4,1,8,Married,Female,Pre-K,STEM,No
+
 1000,Indian,36,11,44,UG,1,5,9,Married,Binary,Pre-K,Language,No
