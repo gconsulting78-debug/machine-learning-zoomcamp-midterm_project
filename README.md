@@ -16,4 +16,13 @@
   * Student Grade	- **Pre-K**, **Primary**, **Secodnary** (teachers more stressed in lower level)
   * Subject	(**STEM**, **English**, **Language**, **Sports**) - Stem and Language teachers in more demand
 
-  
+ * Data is stored in [Teacher Churn Data ] - ['https://raw.githubusercontent.com/gconsulting78-debug/machine-learning-zoomcamp-midterm_project/refs/heads/main/Teacher-Churn_Mid_Term_Project1.csv']
+
+* Data was separated between numeric and categorical data with missing values replace by **0** and **NA** respectively
+* EDA was performed by calculating ROC_AUC and Mutual Information Score respectively for numeric and categorical data
+  * EDA on Numerical attibutes reveals highest ROC_AUC score for student ratio followed by teacher rating last year
+  * EDA on Categorical data reveals highest information value for education followed by marital status
+ 
+* train.py [
+  * Used 4 classification models for the binary churn prediction - Logistic Regression, Decision Tree Classifier, Random Forest Classifier and XGBoost Classifier. XGBoost Classifier performed the best with best AUC of 0.8973
+* predict.py for prediciting single teacher churn behavior with the given attributes
