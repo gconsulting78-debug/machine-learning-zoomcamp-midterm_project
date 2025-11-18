@@ -1,3 +1,4 @@
+#Teacher Churn Prediction Project ---
 This project is to apply the concept of predicting customer churn to teacher churn. 
 This is a real situation where the project was for a pre-high school chain that was facing high teacher churn which reflected poorly on student score and parent dis-satisfaction
 Various factors were considered after discussing with the management and available data. Some of the attributes considered are:
