@@ -23,9 +23,9 @@
   * EDA on Numerical attibutes reveals highest ROC_AUC score for student ratio followed by teacher rating last year
   * EDA on Categorical data reveals highest information value for education followed by marital status
  
-* train.py []
+* train.py [http://127.0.0.1:8888/lab/tree/train.py]
   * Used 4 classification models for the binary churn prediction - Logistic Regression, Decision Tree Classifier, Random Forest Classifier and XGBoost Classifier. XGBoost Classifier performed the best with best AUC of 0.8973
-* predict.py [] for prediciting single teacher churn behavior with the given attributes
+* predict.py [http://127.0.0.1:8888/lab/tree/predict.py] for prediciting single teacher churn behavior with the given attributes
 
 #Environment management 
 -
@@ -58,5 +58,24 @@
 
  uv sync
 
-#Used Docker [] 
+#Used Docker Containerisation [] 
 -
+FROM python:3.13.5-slim-bookworm
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+WORKDIR /code
+
+ENV PATH="/code/.venv/bin:$PATH"
+
+COPY "pyproject.toml" "uv.lock" ".python-version" ./
+
+RUN uv sync --locked
+
+COPY "predict.py" "model.bin" ./
+
+EXPOSE 9696
+
+ENTRYPOINT ["uv", "run","uvicorn", "predict:app", "--host", "0.0.0.0", "--port", "9696"]
+
+# docker run -it --rm -p 9696:9696 predict-churn
