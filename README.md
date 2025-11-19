@@ -81,4 +81,3 @@ ENTRYPOINT ["uv", "run","uvicorn", "predict:app", "--host", "0.0.0.0", "--port",
 Docker build - # **docker build -t predict-churn .**
 
 # docker run -it --rm -p 9696:9696 predict-churn
-<img width="1128" height="854" alt="Teacher Prediction Screenshot" src="https://github.com/user-attachments/assets/872f48e0-875a-4999-a000-e923daf6de27" />
